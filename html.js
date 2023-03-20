@@ -1,3 +1,4 @@
+import makeFile from './file-prac.js';
 const mainPage = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,12 @@ const mainPage = `<!DOCTYPE html>
 </head>
 <body>
   <h1>Hello World!!</h1>
+  <button id = "button1">파일 만들기</button>
+  <script>
+  document.getElementById("button1").addEventListener('click', function() {
+    ${makeFile}
+  });
+  </script>
 </body>
 </html>`
 
