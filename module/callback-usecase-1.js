@@ -1,6 +1,6 @@
 function one(first, second, callback) {
   let addResult = first + second;
-  callback(addResult);
+  return callback(addResult);
 }
 
 const oneCallback = one(1, 2, function(result) {
@@ -9,3 +9,7 @@ const oneCallback = one(1, 2, function(result) {
 });
 
 console.log(oneCallback);
+console.log(one(1, 2, function(result) {
+  let callbackResult = result * 2;
+  return callbackResult;
+}));

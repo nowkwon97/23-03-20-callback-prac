@@ -6,7 +6,7 @@ function minValue(array, callback) {
       min = array[i];
     }
   }
-  callback(min);
+  return callback(min);
 }
 const minValueExample = minValue(exampleArray, function(result) {
   return result * 2;
