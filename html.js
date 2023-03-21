@@ -11,7 +11,8 @@ const mainPage = `<!DOCTYPE html>
   <h1>Hello World!!</h1>
   <button id = "button1">파일 만들기</button>
   <script>
-  document.getElementById("button1").addEventListener('click', function() {
+  const button = document.getElementById("button1");
+  button.addEventListener('click', function() {
     ${makeFile}
   });
   </script>
